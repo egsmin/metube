@@ -30,7 +30,7 @@ COPY --from=builder /metube/dist/metube ./ui/dist/metube
 
 ENV UID=1000
 ENV GID=1000
-ENV UMASK=022
+ENV UMASK=000
 
 ENV DOWNLOAD_DIR /downloads
 ENV STATE_DIR /downloads/.metube
